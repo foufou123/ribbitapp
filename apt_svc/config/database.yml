@@ -1,0 +1,12 @@
+development:
+  adapter: postgresql
+  database: apt_svc_development
+
+test:
+  adapter: postgresql
+  database: apt_svc_test
+
+
+production:
+  adapter: postgresql
+  database: apt_svc_production

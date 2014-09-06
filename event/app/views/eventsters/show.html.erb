@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @eventster.title %>
+</p>
+
+<p>
+  <strong>Location:</strong>
+  <%= @eventster.location %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @eventster.description %>
+</p>
+
+<%= link_to 'Edit', edit_eventster_path(@eventster) %> |
+<%= link_to 'Back', eventsters_path %>

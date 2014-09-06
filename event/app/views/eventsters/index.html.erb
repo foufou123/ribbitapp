@@ -1,0 +1,29 @@
+<h1>Listing eventsters</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Location</th>
+      <th>Description</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @eventsters.each do |eventster| %>
+      <tr>
+        <td><%= eventster.title %></td>
+        <td><%= eventster.location %></td>
+        <td><%= eventster.description %></td>
+        <td><%= link_to 'Show', eventster %></td>
+        <td><%= link_to 'Edit', edit_eventster_path(eventster) %></td>
+        <td><%= link_to 'Destroy', eventster, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Eventster', new_eventster_path %>
