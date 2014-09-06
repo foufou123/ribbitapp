@@ -5,5 +5,4 @@ Rails.application.routes.draw do
   get 'pages/contact'
   root 'listings#index'
 
-
 end
